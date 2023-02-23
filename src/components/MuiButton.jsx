@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 
-import { Button, ButtonGroup, IconButton, Stack } from "@mui/material";
+import {
+    Button,
+    ButtonGroup,
+    IconButton,
+    Stack,
+    ToggleButton,
+    ToggleButtonGroup,
+} from "@mui/material";
 
 import SendIcon from "@mui/icons-material/Send";
+import FormatBoldIcon from "@mui/icons-material/FormatBold";
+import FormatItalicIcon from "@mui/icons-material/FormatItalic";
+import FormatUnderlinedIcon from "@mui/icons-material/FormatUnderlined";
 
 function MuiButton() {
+    const [formats, setFormats] = useState(null);
+    console.log(formats);
+    const handlerFormatChange = (value, newFormat) => {
+        setFormats(newFormat);
+    };
+
     return (
         <Stack spacing={5}>
             <Stack spacing={2} direction="row" justifyContent="center">
@@ -92,6 +108,8 @@ function MuiButton() {
                     variant="contained"
                     size="large"
                     aria-label="alignment button group"
+                    color="success"
+                    orientation="vertical"
                 >
                     <Button>Left</Button>
                     <Button onClick={() => alert("Middle clicked")}>
@@ -99,6 +117,29 @@ function MuiButton() {
                     </Button>
                     <Button>Right</Button>
                 </ButtonGroup>
+            </Stack>
+
+            <Stack justifyContent="center" direction="row">
+                <ToggleButtonGroup
+                    value={formats}
+                    onChange={handlerFormatChange}
+                    aria-label="formatting toggle button"
+                    color="warning"
+                    size="small"
+                    orientation="vertical"
+                    exclusive
+                >
+                    <ToggleButton value="bold" aria-label="bold">
+                        <FormatBoldIcon />
+                    </ToggleButton>
+
+                    <ToggleButton value="italic" aria-label="italic">
+                        <FormatItalicIcon />
+                    </ToggleButton>
+                    <ToggleButton value="underline" aria-label="underline">
+                        <FormatUnderlinedIcon />
+                    </ToggleButton>
+                </ToggleButtonGroup>
             </Stack>
         </Stack>
     );
