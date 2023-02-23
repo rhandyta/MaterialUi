@@ -5,6 +5,7 @@ import {
     FormControl,
     FormLabel,
     FormGroup,
+    FormHelperText,
 } from "@mui/material";
 import React, { useState } from "react";
 import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
@@ -32,7 +33,11 @@ function MuiCheckbox() {
                 <FormControlLabel
                     label="I Accept Term and Condition"
                     control={
-                        <Checkbox checked={acceptTnC} onChange={handleChange} />
+                        <Checkbox
+                            checked={acceptTnC}
+                            onChange={handleChange}
+                            color="warning"
+                        />
                     }
                 />
             </Box>
@@ -45,7 +50,7 @@ function MuiCheckbox() {
             </Box>
 
             <Box>
-                <FormControl>
+                <FormControl error>
                     <FormLabel aria-label="skills">Skills</FormLabel>
                     <FormGroup row>
                         <FormControlLabel
@@ -79,6 +84,7 @@ function MuiCheckbox() {
                             }
                         />
                     </FormGroup>
+                    <FormHelperText>Invalid Selected</FormHelperText>
                 </FormControl>
             </Box>
         </Box>
