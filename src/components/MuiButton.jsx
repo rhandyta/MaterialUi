@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Button, IconButton, Stack } from "@mui/material";
+import { Button, ButtonGroup, IconButton, Stack } from "@mui/material";
 
 import SendIcon from "@mui/icons-material/Send";
 
@@ -83,6 +83,22 @@ function MuiButton() {
                 >
                     Send
                 </Button>
+            </Stack>
+
+            {/* Button Group */}
+
+            <Stack direction="row" justifyContent="center">
+                <ButtonGroup
+                    variant="contained"
+                    size="large"
+                    aria-label="alignment button group"
+                >
+                    <Button>Left</Button>
+                    <Button onClick={() => alert("Middle clicked")}>
+                        Middle
+                    </Button>
+                    <Button>Right</Button>
+                </ButtonGroup>
             </Stack>
         </Stack>
     );
