@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import React from "react";
 
-function MuiBox() {
+function MuiLayout() {
     return (
         <Box spacing={5} direction="column">
             <Box display="flex" gap={2}>
@@ -37,4 +37,4 @@ function MuiBox() {
     );
 }
 
-export default MuiBox;
+export default MuiLayout;

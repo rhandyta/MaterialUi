@@ -9,7 +9,7 @@ import "./App.css";
 // import MuiSwitch from "./components/MuiSwitch";
 // import MuiRating from "./components/MuiRating";
 // import MuiAutocomplete from "./components/MuiAutocomplete";
-import MuiBox from "./components/MuiBox";
+import MuiLayout from "./components/MuiLayout";
 function App() {
     return (
         <div className="app">
@@ -22,7 +22,7 @@ function App() {
             {/* <MuiSwitch /> */}
             {/* <MuiRating /> */}
             {/* <MuiAutocomplete /> */}
-            <MuiBox />
+            <MuiLayout />
         </div>
     );
 }
