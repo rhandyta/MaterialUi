@@ -11,7 +11,9 @@ import "./App.css";
 // import MuiAutocomplete from "./components/MuiAutocomplete";
 // import MuiLayout from "./components/MuLayout";
 // import MuiCard from "./components/MuiCard";
-import MuiAccordin from "./components/MuiAccordin";
+// import MuiAccordin from "./components/MuiAccordin";
+import MuiImagelist from "./components/MuiImagelist";
+
 function App() {
     return (
         <div className="app">
@@ -26,7 +28,8 @@ function App() {
             {/* <MuiAutocomplete /> */}
             {/* <MuiLayout /> */}
             {/* <MuiCard /> */}
-            <MuiAccordin />
+            {/* <MuiAccordin /> */}
+            <MuiImagelist />
         </div>
     );
 }
