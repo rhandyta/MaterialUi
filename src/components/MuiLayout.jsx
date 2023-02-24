@@ -1,4 +1,4 @@
-import { Box, Divider, Grid, Stack, Typography } from "@mui/material";
+import { Box, Divider, Grid, Paper, Stack, Typography } from "@mui/material";
 import React from "react";
 
 function MuiLayout() {
@@ -90,6 +90,22 @@ function MuiLayout() {
                     <Box bgcolor="warning.main">Item 4</Box>
                 </Grid>
             </Grid>
+            <Paper elevation={3}>
+                <Grid container my={2} rowSpacing={1} columnSpacing={4} p={10}>
+                    <Grid item xs={12} sm={6}>
+                        <Box bgcolor="warning.main">Item 1</Box>
+                    </Grid>
+                    <Grid item xs={12} sm={6}>
+                        <Box bgcolor="warning.main">Item 2</Box>
+                    </Grid>
+                    <Grid item xs={12} sm={6}>
+                        <Box bgcolor="warning.main">Item 3</Box>
+                    </Grid>
+                    <Grid item xs={12} sm={6}>
+                        <Box bgcolor="warning.main">Item 4</Box>
+                    </Grid>
+                </Grid>
+            </Paper>
         </>
     );
 }
