@@ -1,10 +1,10 @@
-import { Box } from "@mui/material";
+import { Box, Divider, Stack } from "@mui/material";
 import React from "react";
 
 function MuiLayout() {
     return (
-        <Box spacing={5} direction="column">
-            <Box display="flex" gap={2}>
+        <Box direction="column" border="1px solid grey" gap={5}>
+            <Box display="flex" gap={3}>
                 <Box component="span">Box</Box>
                 <Box
                     sx={{
@@ -33,6 +33,35 @@ function MuiLayout() {
                     Box2
                 </Box>
             </Box>
+
+            <Stack
+                width="100%"
+                height="250px"
+                spacing={2}
+                direction="row"
+                alignItems="center"
+                justifyContent="center"
+                divider={<Divider orientation="vertical" flexItem />}
+            >
+                <Box
+                    width="100px"
+                    height="100px"
+                    bgcolor="primary.main"
+                    borderRadius="10px"
+                ></Box>
+                <Box
+                    width="100px"
+                    height="100px"
+                    bgcolor="error.main"
+                    borderRadius="10px"
+                ></Box>
+                <Box
+                    width="100px"
+                    height="100px"
+                    bgcolor="warning.main"
+                    borderRadius="10px"
+                ></Box>
+            </Stack>
         </Box>
     );
 }
