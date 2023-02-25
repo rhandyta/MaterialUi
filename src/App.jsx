@@ -14,7 +14,8 @@ import "./App.css";
 // import MuiAccordin from "./components/MuiAccordin";
 // import MuiImagelist from "./components/MuiImagelist";
 import MuiNavbar from "./components/MuiNavbar";
-import MuiLink from "./components/MuiLink";
+// import MuiLink from "./components/MuiLink";
+import MuiBreadCrumbs from "./components/MuiBreadCrumbs";
 
 function App() {
     return (
@@ -33,7 +34,8 @@ function App() {
             {/* <MuiAccordin /> */}
             {/* <MuiImagelist /> */}
             <MuiNavbar />
-            <MuiLink />
+            {/* <MuiLink /> */}
+            <MuiBreadCrumbs />
         </div>
     );
 }
