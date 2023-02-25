@@ -8,7 +8,7 @@ import {
     Stack,
 } from "@mui/material";
 import React from "react";
-
+import InfoIcon from "@mui/icons-material/Info";
 const itemData = [
     {
         img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
@@ -274,20 +274,23 @@ function MuiImagelist() {
                     <ListSubheader component="div">December</ListSubheader>
                 </ImageListItem>
                 {itemData.map((item, index) => (
-                    <ImageListItem>
+                    <ImageListItem key={index}>
                         <img
-                            src={`${item.img}`}
-                            alt={`${item.title}`}
+                            src={`${item.img}?w=248&fit=crop&auto=format`}
+                            srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                            alt={item.title}
                             loading="lazy"
                         />
                         <ImageListItemBar
                             title={item.title}
-                            subtitle={"vxvx"}
+                            subtitle="vxvx"
                             actionIcon={
                                 <IconButton
                                     sx={{ color: "rgba(255,255,255, 0.54)" }}
                                     aria-label={`info about ${item.title}`}
-                                />
+                                >
+                                    <InfoIcon />
+                                </IconButton>
                             }
                         />
                     </ImageListItem>
