@@ -17,11 +17,12 @@ import MuiNavbar from "./components/MuiNavbar";
 // import MuiLink from "./components/MuiLink";
 // import MuiBreadCrumbs from "./components/MuiBreadCrumbs";
 // import MuiDrawer from "./components/MuiDrawer";
-import MuiSpeedDial from "./components/MuiSpeedDial";
+// import MuiSpeedDial from "./components/MuiSpeedDial";
+import MuiBottomNavigation from "./components/MuiBottomNavigation";
 
 function App() {
     return (
-        <div className="app">
+        <div>
             {/* <MuiTypography /> */}
             {/* <MuiButton /> */}
             {/* <MuiTextField /> */}
@@ -39,7 +40,8 @@ function App() {
             {/* <MuiLink /> */}
             {/* <MuiBreadCrumbs /> */}
             {/* <MuiDrawer /> */}
-            <MuiSpeedDial />
+            {/* <MuiSpeedDial /> */}
+            <MuiBottomNavigation />
         </div>
     );
 }
