@@ -18,31 +18,36 @@ import MuiNavbar from "./components/MuiNavbar";
 // import MuiBreadCrumbs from "./components/MuiBreadCrumbs";
 // import MuiDrawer from "./components/MuiDrawer";
 // import MuiSpeedDial from "./components/MuiSpeedDial";
-import MuiBottomNavigation from "./components/MuiBottomNavigation";
+// import MuiBottomNavigation from "./components/MuiBottomNavigation";
+import MuiAvatar from "./components/MuiAvatar";
 
 function App() {
     return (
-        <div>
-            {/* <MuiTypography /> */}
-            {/* <MuiButton /> */}
-            {/* <MuiTextField /> */}
-            {/* <MuiSelect /> */}
-            {/* <MuiRadio /> */}
-            {/* <MuiCheckbox /> */}
-            {/* <MuiSwitch /> */}
-            {/* <MuiRating /> */}
-            {/* <MuiAutocomplete /> */}
-            {/* <MuiLayout /> */}
-            {/* <MuiCard /> */}
-            {/* <MuiAccordin /> */}
-            {/* <MuiImagelist /> */}
+        <>
             <MuiNavbar />
-            {/* <MuiLink /> */}
-            {/* <MuiBreadCrumbs /> */}
-            {/* <MuiDrawer /> */}
-            {/* <MuiSpeedDial /> */}
-            <MuiBottomNavigation />
-        </div>
+            <div className="App">
+                {/* <MuiTypography /> */}
+                {/* <MuiButton /> */}
+                {/* <MuiTextField /> */}
+                {/* <MuiSelect /> */}
+                {/* <MuiRadio /> */}
+                {/* <MuiCheckbox /> */}
+                {/* <MuiSwitch /> */}
+                {/* <MuiRating /> */}
+                {/* <MuiAutocomplete /> */}
+                {/* <MuiLayout /> */}
+                {/* <MuiCard /> */}
+                {/* <MuiAccordin /> */}
+                {/* <MuiImagelist /> */}
+
+                {/* <MuiLink /> */}
+                {/* <MuiBreadCrumbs /> */}
+                {/* <MuiDrawer /> */}
+                {/* <MuiSpeedDial /> */}
+                {/* <MuiBottomNavigation /> */}
+                <MuiAvatar />
+            </div>
+        </>
     );
 }
 
