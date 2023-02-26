@@ -94,10 +94,14 @@ function MuiList() {
                         </ListItemButton>
                     </ListItem>
                     <Collapse in={open} timeout="auto" unmountOnExit>
-                        <List component="div" disabledPadding>
-                            <ListItemButton sx={{ pl: 5 }}>
+                        <List component="div" disablePadding>
+                            <ListItemButton sx={{ pl: 4 }}>
                                 <ListItemIcon>
-                                    <Person />
+                                    <ListItemAvatar>
+                                        <Avatar>
+                                            <Person />
+                                        </Avatar>
+                                    </ListItemAvatar>
                                 </ListItemIcon>
                                 <ListItemText primary="Accounts" />
                             </ListItemButton>
