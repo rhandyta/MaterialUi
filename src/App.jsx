@@ -23,7 +23,8 @@ import MuiNavbar from "./components/MuiNavbar";
 // import MuiBadge from "./components/MuiBadge";
 // import MuiList from "./components/MuiList";
 // import MuiChip from "./components/MuiChip";
-import Tooltip from "./components/MuiTooltip";
+// import Tooltip from "./components/MuiTooltip";
+import MuiTable from "./components/MuiTable";
 
 function App() {
     return (
@@ -53,7 +54,8 @@ function App() {
                 {/* <MuiBadge /> */}
                 {/* <MuiList /> */}
                 {/* <MuiChip /> */}
-                <Tooltip />
+                {/* <Tooltip /> */}
+                <MuiTable />
             </div>
         </>
     );
