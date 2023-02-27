@@ -1,4 +1,4 @@
-import { Favorite } from "@mui/icons-material";
+import { Save } from "@mui/icons-material";
 import { LoadingButton } from "@mui/lab";
 import { Stack } from "@mui/system";
 import React from "react";
@@ -20,20 +20,20 @@ function MuiLoadingButton() {
             </LoadingButton>
             <LoadingButton
                 variant="text"
-                startIcon={<Favorite />}
+                startIcon={<Save />}
                 loadingPosition="start"
                 sx={{ width: 100 }}
             >
-                Submit
+                Save
             </LoadingButton>
             <LoadingButton
                 sx={{ width: 100 }}
                 variant="text"
-                startIcon={<Favorite />}
+                startIcon={<Save />}
                 loading
                 loadingPosition="start"
             >
-                Submit
+                Save
             </LoadingButton>
         </Stack>
     );
