@@ -24,7 +24,8 @@ import MuiNavbar from "./components/MuiNavbar";
 // import MuiList from "./components/MuiList";
 // import MuiChip from "./components/MuiChip";
 // import Tooltip from "./components/MuiTooltip";
-import MuiTable from "./components/MuiTable";
+// import MuiTable from "./components/MuiTable";
+import MuiAlert from "./components/MuiAlert";
 
 function App() {
     return (
@@ -55,7 +56,8 @@ function App() {
                 {/* <MuiList /> */}
                 {/* <MuiChip /> */}
                 {/* <Tooltip /> */}
-                <MuiTable />
+                {/* <MuiTable /> */}
+                <MuiAlert />
             </div>
         </>
     );
