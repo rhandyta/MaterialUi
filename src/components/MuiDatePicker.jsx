@@ -6,7 +6,7 @@ function MuiDatePicker() {
     const [selectedDate, setSelectedDate] = useState(null);
     const [selectedTime, setSelectedTime] = useState(null);
     const [dateTime, setDateTime] = useState(null);
-    console.log({ date_time: dateTime.toLocaleString() });
+    console.log({ dateTime });
     return (
         <Stack
             spacing={4}
