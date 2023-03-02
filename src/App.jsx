@@ -1,5 +1,5 @@
 import "./App.css";
-
+import { createTheme, colors, ThemeProvider } from "@mui/material";
 // import MuiButton from "./components/MuiButton";
 // import MuiTypography from "./components/MuiTypography";
 // import MuiTextField from "./components/MuiTextField";
@@ -40,9 +40,24 @@ import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
 // import MuiMasonry from "./components/MuiMasonry";
 import MuiResponsiveness from "./components/MuiResponsiveness";
 
+const theme = createTheme({
+    status: {
+        danger: "#e53e3e",
+    },
+    palette: {
+        secondary: {
+            main: colors.orange[500],
+        },
+        neutral: {
+            main: colors.grey[500],
+            darker: colors.grey[700],
+        },
+    },
+});
+
 function App() {
     return (
-        <>
+        <ThemeProvider theme={theme}>
             <LocalizationProvider dateAdapter={AdapterDateFns}>
                 <MuiNavbar />
                 <div className="App">
@@ -85,7 +100,7 @@ function App() {
                     <MuiResponsiveness />
                 </div>
             </LocalizationProvider>
-        </>
+        </ThemeProvider>
     );
 }
 
