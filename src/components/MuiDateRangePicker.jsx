@@ -1,17 +1,21 @@
 import { DateRangePicker } from "@mui/x-date-pickers-pro";
 import { Box, TextField } from "@mui/material";
-import React, { useState } from "react";
+import React, {useState} from "react";
 
 function MuiDateRangePicker() {
     const [value, setValue] = useState([null, null]);
-    console.log({ value });
+
+    const handleChange = (newValue) => {
+        setValue(newValue)
+    }
+
     return (
         <Box width={500}>
             <DateRangePicker
                 startText="Check-In"
                 endText="Check-out"
                 value={value}
-                onChange={(newValue) => setValue(newValue)}
+                onChange={handleChange}
                 renderInput={(startProps, endProps) => (
                     <>
                         <TextField {...startProps} />
